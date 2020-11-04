@@ -5,7 +5,7 @@ Implementation of algorithms and data structures for python coding interview.
 Topics
 --
 - [Primitive Types](#Primitive-Type)
-    - [Parity check](#Q1. How would you compute the parity of a very large number of 64-bit words?) of large 64-bit words
+    - [Parity check](#Parity-Check) of large 64-bit words
     
 ## Primitive-Type
 
@@ -25,7 +25,9 @@ Python has several built-in types: numeric, sequence, mapping, as well as classe
 * Consider using a cache to accelerate operations by using it to brute force algorithm.
 * Be aware that commutativity and associativity can be used to perform operations in parallel and reorder operation.
 
-## Q1. How would you compute the parity of a very large number of 64-bit words?
+# Parity-Check
+Q1. How would you compute the parity of a very large number of 64-bit words?
+--
 Solution:
 --
 **Brute Force Method:** The parity of a binary word is 1 if the number of 1s in the word is odd; otherwise, it is 0. The brute-force algorithm iteratively tests the value of each bit while tracking the number of 1s seen so far. Since we only care about the number of 1s is even or odd, we can store the number mod 2. The parity computation can be done using different algorithms other than the brute-force algorithm.
