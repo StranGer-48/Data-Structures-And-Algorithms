@@ -5,7 +5,7 @@ Implementation of algorithms and data structures for python coding interview.
 Topics
 --
 - [Primitive Types](#Primitive-Type)
-    - Parity check of large 64-bit words
+    - [Parity check](#Q1. How would you compute the parity of a very large number of 64-bit words?) of large 64-bit words
     
 ## Primitive-Type
 
