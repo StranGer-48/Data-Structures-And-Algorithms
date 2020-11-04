@@ -15,8 +15,10 @@ Python has several built-in types: numeric, sequence, mapping, as well as classe
 * Consider using a cache to accelerate operations by using it to brute force algorithm.
 * Be aware that commutativity and associativity can be used to perform operations in parallel and reorder operation.
 
-**Q1. How would you compute the parity of a very large number of 64-bit words?**
-**Solution:** 
+Q1. How would you compute the parity of a very large number of 64-bit words?
+--
+Solution:
+--
 **Brute Force Method:** The parity of a binary word is 1 if the number of 1s in the word is odd; otherwise, it is 0. The brute-force algorithm iteratively tests the value of each bit while tracking the number of 1s seen so far. Since we only care about the number of 1s is even or odd, we can store the number mod 2. The parity computation can be done using different algorithms other than the brute-force algorithm.
 
 **Erasing Last Set Bit:** The first improvement is based on erasing the lowest set bit in a word in a single operation, thereby improving performance in the best and average case. Here is a great bit finding trick which=k you should commit to memory: x & (x-1) equal x with its lowest set bit erased. Here '&' is the bitwise operator. for example, if x = 00101100, then x-1 = 00101011, and so x&(x-1) = 00101100 & 00101011 = 00101000. This fact can be used to reduce the time complexity. 
